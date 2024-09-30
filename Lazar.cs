@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -201,7 +202,236 @@ namespace ConsoleApp1
             //}
             //Console.ReadKey();
 
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //if (a % 100 >= 11 && a % 100 <= 19)
+            //{
+            //    Console.WriteLine(a + " лет");
+            //}
+            //else
+            //{
+            //    switch (a % 10)
+            //    {
+            //        case 1:
+            //            Console.WriteLine(a + " год");
+            //            break;
+            //        case 2:
+            //        case 3:
+            //        case 4:
+            //            Console.WriteLine(a + " года");
+            //            break;
+            //        default:
+            //            Console.WriteLine(a + " лет");
+            //            break;
+            //    }
+            //}
+            //Console.ReadKey();
 
+            //string a;
+            //Console.WriteLine("Введите день недели");
+            //a = Convert.ToString(Console.ReadLine());
+            //switch (a)
+            //{
+            //    case "Понедельник":
+            //        Console.WriteLine("1");
+            //        break;
+            //    case "Вторник":
+            //        Console.WriteLine("2");
+            //        break;
+            //    case "Среда":
+            //        Console.WriteLine("3");
+            //        break;
+            //    case "Четверг":
+            //        Console.WriteLine("4");
+            //        break;
+            //    case "Пятница":
+            //        Console.WriteLine("5");
+            //        break;
+            //    case "Суббота":
+            //        Console.WriteLine("6");
+            //        break;
+            //    case "Воскресенье":
+            //        Console.WriteLine("7");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Ошибка");
+            //        break;
+            //}
+            //Console.ReadKey();
+
+
+            //Console.WriteLine("Введите число от 100 до 999");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //if (a < 100 || a > 999)
+            //{
+            //    Console.WriteLine("Введено некорректное число");
+            //}
+
+            //int b = a / 100;
+            //int c = (a / 10) % 10;
+            //int d = a % 10;
+
+            //string result = "";
+
+            //switch (b)
+            //{
+            //    case 1:
+            //        result = result + "сто";
+            //        break;
+            //    case 2:
+            //        result = result + "двести";
+            //        break;
+            //    case 3:
+            //        result = result + "триста";
+            //        break;
+            //    case 4:
+            //        result = result + "четыреста";
+            //        break;
+            //    case 5:
+            //        result = result + "пятьсот";
+            //        break;
+            //    case 6:
+            //        result = result + "шестьсот";
+            //        break;
+            //    case 7:
+            //        result = result + "семьсот";
+            //        break;
+            //    case 8:
+            //        result = result + "восемьсот";
+            //        break;
+            //    case 9:
+            //        result = result + "девятьсот";
+            //        break;
+            //}
+            //switch (c)
+            //{
+            //    case 1:
+            //        result = result + "десять";
+            //        break;
+            //    case 2:
+            //        result = result + "двадцать";
+            //        break;
+            //    case 3:
+            //        result = result + "тридцать";
+            //        break;
+            //    case 4:
+            //        result = result + "сорок";
+            //        break;
+            //    case 5:
+            //        result = result + "пятьдесят";
+            //        break;
+            //    case 6:
+            //        result = result + "шестьдесят";
+            //        break;
+            //    case 7:
+            //        result = result + "семьдесят";
+            //        break;
+            //    case 8:
+            //        result = result + "восемьдесят";
+            //        break;
+            //    case 9:
+            //        result = result + "девяносто";
+            //        break;
+            //}
+            //switch (d)
+            //{
+            //    case 1:
+            //        result = result + "один";
+            //        break;
+            //    case 2:
+            //        result = result + "два";
+            //        break;
+            //    case 3:
+            //        result = result + "три";
+            //        break;
+            //    case 4:
+            //        result = result + "четыре";
+            //        break;
+            //    case 5:
+            //        result = result + "пять";
+            //        break;
+            //    case 6:
+            //        result = result + "шесть";
+            //        break;
+            //    case 7:
+            //        result = result + "семь";
+            //        break;
+            //    case 8:
+            //        result = result + "восемь";
+            //        break;
+            //    case 9:
+            //        result = result + "девять";
+            //        break;
+            //}
+            //Console.WriteLine(result);
+            //Console.ReadKey();
+
+            Console.WriteLine("Введите масть 1 - пики, 2 - трефы, 3 - бубны, 4 - черви");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите карту 6 - 14");
+            int k = Convert.ToInt32(Console.ReadLine());
+            if (m < 1 || m > 4 || k < 6 || k > 14)
+            { Console.WriteLine("Неверные значения карты или масти"); 
+            }
+            string mast;
+            switch(m)
+            {
+                case 1:
+                    mast = " Пик";
+                    break;
+                case 2:
+                    mast = " Трефы";
+                    break;
+                case 3:
+                    mast = " Бубны";
+                    break;
+                case 4:
+                    mast = " Черви";
+                    break;
+                default:
+                    mast = "";
+                    break;
+            }
+            string card;
+            switch (k) {
+                case 6:
+                    card = "Шестёрка";
+                        break;
+                case 7:
+                    card = "Семёрка";
+                       break;
+                case 8:
+                    card = "Восьмёрка";
+                        break;
+                case 9:
+                    card = "Девятка";
+                        break;
+                case 10:
+                    card = "Десять ";
+                        break;
+                case 11:
+                    card = "Валет";
+                        break;
+                case 12:
+                    card = "Дама";
+                        break;
+                case 13:
+                    card = "Король";
+                        break;
+                case 14:
+                    card = "Туз";
+                        break;
+                default:
+                    card = k.ToString();
+                    break;
+            }
+
+            Console.WriteLine($"Вы выбрали: { card + mast}");
+            Console.ReadKey();
+
+           
+            
+            
+            
         }
 
 
