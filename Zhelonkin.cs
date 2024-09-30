@@ -257,148 +257,148 @@ namespace ConsoleApp1
             //}
             //Console.ReadKey();
 
-            Console.WriteLine("Введите число от 100 до 999");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a < 100 || a > 999)
-            {
-                Console.WriteLine("Введено некорректное число");
-            }
-            int handreds = a / 100;
-            int tens = (a / 10) % 10;
-            int ones = a % 10;
+            //Console.WriteLine("Введите число от 100 до 999");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //if (a < 100 || a > 999)
+            //{
+            //    Console.WriteLine("Введено некорректное число");
+            //}
+            //int handreds = a / 100;
+            //int tens = (a / 10) % 10;
+            //int ones = a % 10;
 
-            string result = "";
+            //string result = "";
 
-            switch (handreds)
-            {
-                case 1:
-                    result = result + "сто ";
-                    break;
-                case 2:
-                    result = result + "двести ";
-                    break;
-                case 3:
-                    result = result + "триста ";
-                    break;
-                case 4:
-                    result = result + "четыреста ";
-                    break;
-                case 5:
-                    result = result + "пятьсот ";
-                    break;
-                case 6:
-                    result = result + "шестьсот ";
-                    break;
-                case 7:
-                    result = result + "семьсот ";
-                    break;
-                case 8:
-                    result = result + "восемьсот ";
-                    break;
-                case 9:
-                    result = result + "девятьсот ";
-                    break;
-            }
-            if (tens == 1)
-            {
-                switch (ones)
-                {
-                    case 0:
-                        result = result + "десять ";
-                        break;
-                    case 1:
-                        result = result + "одиннадцать ";
-                        break;
-                    case 2:
-                        result = result + "двенадцать ";
-                        break;
-                    case 3:
-                        result = result + "тринадцать ";
-                        break;
-                    case 4:
-                        result = result + "четырнадцать ";
-                        break;
-                    case 5:
-                        result = result + "пятнадцать ";
-                        break;
-                    case 6:
-                        result = result + "шестнадцать ";
-                        break;
-                    case 7:
-                        result = result + "семнадцать ";
-                        break;
-                    case 8:
-                        result = result + "восемнадцать ";
-                        break;
-                    case 9:
-                        result = result + "девятнадцать ";
-                        break;
+            //switch (handreds)
+            //{
+            //    case 1:
+            //        result = result + "сто ";
+            //        break;
+            //    case 2:
+            //        result = result + "двести ";
+            //        break;
+            //    case 3:
+            //        result = result + "триста ";
+            //        break;
+            //    case 4:
+            //        result = result + "четыреста ";
+            //        break;
+            //    case 5:
+            //        result = result + "пятьсот ";
+            //        break;
+            //    case 6:
+            //        result = result + "шестьсот ";
+            //        break;
+            //    case 7:
+            //        result = result + "семьсот ";
+            //        break;
+            //    case 8:
+            //        result = result + "восемьсот ";
+            //        break;
+            //    case 9:
+            //        result = result + "девятьсот ";
+            //        break;
+            //}
+            //if (tens == 1)
+            //{
+            //    switch (ones)
+            //    {
+            //        case 0:
+            //            result = result + "десять ";
+            //            break;
+            //        case 1:
+            //            result = result + "одиннадцать ";
+            //            break;
+            //        case 2:
+            //            result = result + "двенадцать ";
+            //            break;
+            //        case 3:
+            //            result = result + "тринадцать ";
+            //            break;
+            //        case 4:
+            //            result = result + "четырнадцать ";
+            //            break;
+            //        case 5:
+            //            result = result + "пятнадцать ";
+            //            break;
+            //        case 6:
+            //            result = result + "шестнадцать ";
+            //            break;
+            //        case 7:
+            //            result = result + "семнадцать ";
+            //            break;
+            //        case 8:
+            //            result = result + "восемнадцать ";
+            //            break;
+            //        case 9:
+            //            result = result + "девятнадцать ";
+            //            break;
 
-                }
-            }
-            else
-            {
-                switch (tens)
-                {
-                    case 2:
-                        result = result + "двадцать ";
-                        break;
-                    case 3:
-                        result = result + "тридцать ";
-                        break;
-                    case 4:
-                        result = result + "сорок ";
-                        break;
-                    case 5:
-                        result = result + "пятьдесят ";
-                        break;
-                    case 6:
-                        result = result + "шестьдесят ";
-                        break;
-                    case 7:
-                        result = result + "семьдесят ";
-                        break;
-                    case 8:
-                        result = result + "восемьдесят ";
-                        break;
-                    case 9:
-                        result = result + "девяносто ";
-                        break;
-                }
-                switch (ones)
-                {
-                    case 1:
-                        result = result + "один ";
-                        break;
-                    case 2:
-                        result = result + "два ";
-                        break;
-                    case 3:
-                        result = result + "три ";
-                        break;
-                    case 4:
-                        result = result + "четыре ";
-                        break;
-                    case 5:
-                        result = result + "пять ";
-                        break;
-                    case 6:
-                        result = result + "шесть ";
-                        break;
-                    case 7:
-                        result = result + "семь ";
-                        break;
-                    case 8:
-                        result = result + "восемь ";
-                        break;
-                    case 9:
-                        result = result + "девять ";
-                        break;
-                }
+            //    }
+            //}
+            //else
+            //{
+            //    switch (tens)
+            //    {
+            //        case 2:
+            //            result = result + "двадцать ";
+            //            break;
+            //        case 3:
+            //            result = result + "тридцать ";
+            //            break;
+            //        case 4:
+            //            result = result + "сорок ";
+            //            break;
+            //        case 5:
+            //            result = result + "пятьдесят ";
+            //            break;
+            //        case 6:
+            //            result = result + "шестьдесят ";
+            //            break;
+            //        case 7:
+            //            result = result + "семьдесят ";
+            //            break;
+            //        case 8:
+            //            result = result + "восемьдесят ";
+            //            break;
+            //        case 9:
+            //            result = result + "девяносто ";
+            //            break;
+            //    }
+            //    switch (ones)
+            //    {
+            //        case 1:
+            //            result = result + "один ";
+            //            break;
+            //        case 2:
+            //            result = result + "два ";
+            //            break;
+            //        case 3:
+            //            result = result + "три ";
+            //            break;
+            //        case 4:
+            //            result = result + "четыре ";
+            //            break;
+            //        case 5:
+            //            result = result + "пять ";
+            //            break;
+            //        case 6:
+            //            result = result + "шесть ";
+            //            break;
+            //        case 7:
+            //            result = result + "семь ";
+            //            break;
+            //        case 8:
+            //            result = result + "восемь ";
+            //            break;
+            //        case 9:
+            //            result = result + "девять ";
+            //            break;
+            //    }
 
-            }
-            Console.WriteLine(result);
-            Console.ReadKey();
+            //}
+            //Console.WriteLine(result);
+            //Console.ReadKey();
 
 
 
