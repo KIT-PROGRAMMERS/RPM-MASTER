@@ -416,31 +416,47 @@ namespace ConsoleApp1
             //Console.WriteLine($"Сумма чисел равна: {s}");
             //Console.ReadKey();
 
-            int s = 1;
-            Console.WriteLine("Введите начало интервала: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите конец интервала: ");
-            int b = Convert.ToInt32(Console.ReadLine());
-                for (int i = a; i <= b; i++)
+            //int s = 1;
+            //Console.WriteLine("Введите начало интервала: ");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите конец интервала: ");
+            //int b = Convert.ToInt32(Console.ReadLine());
+            //    for (int i = a; i <= b; i++)
+            //{
+            //    if (i > 0 && i % 3 == 0)
+            //    {
+            //        s = s * i;
+            //    }
+            //}
+            //if (s == 1)
+            //{
+            //    Console.WriteLine("На данном промежутке нет положительных чисел, кратных 3");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Результат: {s}");
+            //}
+            //Console.ReadKey();
+
+            //int result = 1;
+            //Console.WriteLine("Введите число, факториал которого вы хотите вычислить:");
+            //int fac = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 1; i <= fac; i++)
+            //{
+            //    result *= i;
+            //}
+            //Console.WriteLine($"Результат: {result}");
+            //Console.ReadKey();
+
+            Console.WriteLine("Введите число, для определения, простое оно или нет:");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= 9; i++)
             {
-                if (i > 0 && i % 3 == 0)
-                {
-                    s = s * i;
-                }
+                if (num % )
             }
-            if (s == 1)
-            {
-                Console.WriteLine("На данном промежутке нет положительных чисел, кратных 3");
-            }
-            else
-            {
-                Console.WriteLine($"Результат: {s}");
-            }
+                Console.WriteLine($"Введенное число {num} - простое");
+                Console.WriteLine($"Введенное число {num} - не простое");
             Console.ReadKey();
-
-
-
-
         }
 
 
