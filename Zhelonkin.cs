@@ -400,6 +400,37 @@ namespace ConsoleApp1
             //Console.WriteLine(result);
             //Console.ReadKey();
 
+            //int s = 0;
+            //Console.WriteLine("Введите начало интервала: ");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите конец интервала: ");
+            //int b = Convert.ToInt32(Console.ReadLine());
+            //for (int i = a; i <= b; i++)
+            //{
+            //    s = s + i;
+            //}
+            //for (int i = b; i <= a; i++)
+            //{
+            //    s = s + i;
+            //}
+            //Console.WriteLine($"Сумма чисел равна: {s}");
+            //Console.ReadKey();
+
+            int s = 1;
+            Console.WriteLine("Введите начало интервала: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите конец интервала: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+                for (int i = a; i <= b || i >= b; i++)
+            {
+                if (i > 0 && i % 3 == 0)
+                {
+                    s = s * i;
+                }
+            }
+            Console.WriteLine($"Результат: {s}");
+            Console.ReadKey();
+
 
 
 
