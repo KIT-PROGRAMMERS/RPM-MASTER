@@ -421,14 +421,21 @@ namespace ConsoleApp1
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите конец интервала: ");
             int b = Convert.ToInt32(Console.ReadLine());
-                for (int i = a; i <= b || i >= b; i++)
+                for (int i = a; i <= b; i++)
             {
                 if (i > 0 && i % 3 == 0)
                 {
                     s = s * i;
                 }
             }
-            Console.WriteLine($"Результат: {s}");
+            if (s == 1)
+            {
+                Console.WriteLine("На данном промежутке нет положительных чисел, кратных 3");
+            }
+            else
+            {
+                Console.WriteLine($"Результат: {s}");
+            }
             Console.ReadKey();
 
 
