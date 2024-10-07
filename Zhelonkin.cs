@@ -451,19 +451,14 @@ namespace ConsoleApp1
             //Console.WriteLine("Введите число, для определения, простое оно или нет:");
             //int n = Convert.ToInt32(Console.ReadLine());
             //bool isPrime = true;
-            //if (n <= 1)
+            //n = Math.Abs(n);
+
+            //for (int i = 2; i < n; i++)
             //{
-            //    isPrime = false;
-            //}
-            //else
-            //{
-            //    for (int i = 2; i < n; i++)
+            //    if (n % i == 0)
             //    {
-            //        if (n % i == 0)
-            //        {
-            //            isPrime= false;
-            //            break;
-            //        }
+            //        isPrime = false;
+            //        break;
             //    }
             //}
             //if (isPrime)
@@ -476,6 +471,19 @@ namespace ConsoleApp1
             //}
             //Console.ReadKey();
 
+            //int s = 1;
+            //Console.WriteLine("Введите число, наибольший делитель которого вы хотите узнать:");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 1; i < a; i++)
+            //{
+            //    if (a % i == 0)
+            //    {
+            //        s = i;
+            //    }
+            //}
+            //Console.WriteLine($"Наибольший делитель: {s}");
+            //Console.ReadKey();
+
             //Console.WriteLine("Введите число, для определения количества делителей");
             //int n = Convert.ToInt32(Console.ReadLine());
             //int s = 0;
@@ -484,13 +492,51 @@ namespace ConsoleApp1
             //    if (n % i == 0)
             //    {
             //        s += 1;
+            //        Console.WriteLine($"Делитель: {i}");
             //    }
             //}
             //Console.WriteLine($"Колличество делителей: {s}");
             //Console.ReadKey();
 
+            //Console.WriteLine("Введите число для подсчета четных и нечетных цифр в числе:");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //int a;
+            //int b = 0;
+            //int c = 0;
+            //while (num != 0)
+            //{
+            //    a = num % 10;
+
+            //    if (a % 2 == 0)
+            //    {
+            //        b++;
+            //    }
+            //    else
+            //    {
+            //        c++;
+            //    }
+            //    num = num / 10;
+            //}
+            //Console.WriteLine($"Количество четных цифр {b}. Количество нечетных цифр: {c}");
+            //Console.ReadKey();
+
+            //Console.WriteLine("Введите число:");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //int a;
+            //string b = "";
+            //while (num != 0)
+            //{
+            //    a = num % 10;
+            //    b += a;
+            //    num /= 10;
+            //}
+            //Console.WriteLine($"Ответ: {b}");
+            //Console.ReadKey();
+
+
+
+
+
         }
-
-
     }
 }
