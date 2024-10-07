@@ -449,13 +449,31 @@ namespace ConsoleApp1
             //Console.ReadKey();
 
             Console.WriteLine("Введите число, для определения, простое оно или нет:");
-            int num = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= 9; i++)
+            int n = Convert.ToInt32(Console.ReadLine());
+            bool isPrime = true;
+            if (n <= 1)
             {
-                if (num % )
+                isPrime = false;
             }
-                Console.WriteLine($"Введенное число {num} - простое");
-                Console.WriteLine($"Введенное число {num} - не простое");
+            else
+            {
+                for (int i = 2; i < n; i++)
+                {
+                    if (n % i == 0)
+                    {
+                        isPrime= false;
+                        break;
+                    }
+                }
+            }
+            if (isPrime)
+            {
+                Console.WriteLine($"Введенное число {n} - простое");
+            }
+            else
+            {
+                Console.WriteLine($"Введенное число {n} - не простое");
+            }
             Console.ReadKey();
         }
 
