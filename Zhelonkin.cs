@@ -475,6 +475,20 @@ namespace ConsoleApp1
             //    Console.WriteLine($"Введенное число {n} - не простое");
             //}
             //Console.ReadKey();
+
+            //Console.WriteLine("Введите число, для определения количества делителей");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //int s = 0;
+            //for (int i = 1; i < n; i++)
+            //{
+            //    if (n % i == 0)
+            //    {
+            //        s += 1;
+            //    }
+            //}
+            //Console.WriteLine($"Колличество делителей: {s}");
+            //Console.ReadKey();
+
         }
 
 
