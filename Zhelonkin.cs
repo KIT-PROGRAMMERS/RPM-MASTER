@@ -448,33 +448,33 @@ namespace ConsoleApp1
             //Console.WriteLine($"Результат: {result}");
             //Console.ReadKey();
 
-            Console.WriteLine("Введите число, для определения, простое оно или нет:");
-            int n = Convert.ToInt32(Console.ReadLine());
-            bool isPrime = true;
-            if (n <= 1)
-            {
-                isPrime = false;
-            }
-            else
-            {
-                for (int i = 2; i < n; i++)
-                {
-                    if (n % i == 0)
-                    {
-                        isPrime= false;
-                        break;
-                    }
-                }
-            }
-            if (isPrime)
-            {
-                Console.WriteLine($"Введенное число {n} - простое");
-            }
-            else
-            {
-                Console.WriteLine($"Введенное число {n} - не простое");
-            }
-            Console.ReadKey();
+            //Console.WriteLine("Введите число, для определения, простое оно или нет:");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //bool isPrime = true;
+            //if (n <= 1)
+            //{
+            //    isPrime = false;
+            //}
+            //else
+            //{
+            //    for (int i = 2; i < n; i++)
+            //    {
+            //        if (n % i == 0)
+            //        {
+            //            isPrime= false;
+            //            break;
+            //        }
+            //    }
+            //}
+            //if (isPrime)
+            //{
+            //    Console.WriteLine($"Введенное число {n} - простое");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Введенное число {n} - не простое");
+            //}
+            //Console.ReadKey();
         }
 
 
